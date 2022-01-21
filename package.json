@@ -1,7 +1,7 @@
 {
-  "name": "acme-cypress-automation-tests",
+  "name": "demoblaze-cypress-automation-tests",
   "version": "1.0.0",
-  "description": "A suite of tests using cypress to test the acme site",
+  "description": "A suite of tests using cypress to test the demoblaze site",
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PaulCluver/acme-cypress-automation-tests.git"
+    "url": "git+https://github.com/PaulCluver/demoblaze-cypress-automation-tests.git"
   },
   "author": "Paul Cluver",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PaulCluver/acme-cypress-automation-tests/issues"
+    "url": "https://github.com/PaulCluver/demoblaze-cypress-automation-tests/issues"
   },
-  "homepage": "https://github.com/PaulCluver/acme-cypress-automation-tests#readme",
+  "homepage": "https://github.com/PaulCluver/demoblaze-cypress-automation-tests#readme",
   "dependencies": {
     "cypress": "^9.3.1"
   },

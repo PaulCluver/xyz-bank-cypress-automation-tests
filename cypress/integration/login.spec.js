@@ -2,10 +2,7 @@
 import { should } from 'chai';
 import {
   navigate,
-  login,
-  loginViaForgotLogin,
-  logout,
-  validateWithContains
+  login
 } from '../page-objects/base';
 
 describe('login actions', () => {
@@ -14,20 +11,8 @@ describe('login actions', () => {
     navigate();
   })
 
-  it('should log me in via the Customer Login', () => {
+  it.only('should log me in', () => {
     login();
-    validateWithContains('#leftPanel > ul > :nth-child(8) > a', 'Log out');
+    cy.url().should('eq', 'https://demo.applitools.com/app.html');
   });
-
-  it('should log me in via the "Forgot login info?" link.', () => {
-    loginViaForgotLogin();
-    validateWithContains('#leftPanel > ul > :nth-child(8) > a', 'Log Out');
-  });
-
-  it('should log me out via the log out link', () => {
-    loginViaForgotLogin();
-    logout();
-    validateWithContains('h2', 'Customer Login');
-  });
-
 });
