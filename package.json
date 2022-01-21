@@ -1,0 +1,26 @@
+{
+  "name": "acme-cypress-automation-tests",
+  "version": "1.0.0",
+  "description": "A suite of tests using cypress to test the acme site",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulCluver/acme-cypress-automation-tests.git"
+  },
+  "author": "Paul Cluver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulCluver/acme-cypress-automation-tests/issues"
+  },
+  "homepage": "https://github.com/PaulCluver/acme-cypress-automation-tests#readme",
+  "dependencies": {
+    "cypress": "^9.3.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4"
+  }
+}
